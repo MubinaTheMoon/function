@@ -273,6 +273,145 @@ console.log(calc(problem));
 
 
 
+// 32.Shunday funksiya yasangki, unda 2ta butun son argument qilib beriladi. Agar ushbu sonlardan birontasi 10ga teng bo’lsa yoki ularning yig’indisi 10ga teng bo’lsa funksiya rost qiymat qaytaradi. Aks hold yolg’on.
+function teng10(p, q) {
+    if(p == 10 || q == 10 || p + q == 10){
+        return true
+    }else{
+        return false
+    }
+}
+console.log(teng10(9, 9));
+
+
+
+// 33.Mashina kilometriga 10litr benzin ichadi. Mashina doim yo’lga chiqishdan oldin kamida 100litr benzin bilan chiqadi. Agar masofa funksiyaga argument sifatida berilsa, ushbu masofaga chiqish uchun Mashina necha litr benzin bilan chiqishi keraglini funksiya qaytarib bersin.
+function litrMasofa(km) {
+    return km * 10
+}
+console.log(litrMasofa(23.5));
+
+
+
+// 34.Quyidagi namunaga nazar tashlagan holda funksiya yasang.
+function lessMore(a, b){
+    if(a < b) {
+        return b
+    }else{
+        return a
+    }
+}
+console.log(lessMore(0, 7));
+
+
+
+
+// 35.Funksiya 2ta argument berilsa, funksiya anashu 2ta argumentdan iborat massiv qaytarsin.
+function arr(x, y) {
+    return [x, y]
+}
+console.log(arr(1, 2));
+
+
+
+// 36.Funksiyaga 2ta argument sifatida string ko’rinishidagi ma’lumotlar beriladi. Agar ushbu ikkala stringdagi belgilar soni bir-birinikiga teng bo’lsa funksiya rost qiymat qaytarsin, aks hold yolg’on.
+function tengStrings(str1, str2) {
+    if(str1.length == str2.length){
+        return true
+    }else{
+        return false
+    }
+}
+console.log(tengStrings("AB", "mm"));
+
+
+
+// 37.Shunday funksiya yasangki, unga string argument qilib beriladi, agar ushbu string bo’sh bo’lsa funksiya true qaytaradi, aks holda false.
+function boshStr(str) {
+    if(str.length == 0){
+        return true
+    }else{
+        return false
+    }
+}
+console.log(boshStr(""));
+
+
+
+// 38.Shunday funksiya yasang.Unda butun son argument qilib beriladi. Agar ushbu butun son 5ga bo’linsa, funksiya true qaytarsin, aks holda false.
+function bolinsin5(son) {
+    if(son % 5 === 0){
+        return true
+    }else{
+        return false
+    }
+}
+console.log(bolinsin5(24));
+
+
+
+// 39.Shunday funksiya yasang.Unda butun son argument qilib beriladi. Agar ushbu butun son 100ga bo’linsa, funksiya true qaytarsin, aks holda false.
+function bolinsin100(son) {
+    if(son % 100 === 0){
+        return true
+    }else{
+        return false
+    }
+}
+console.log(bolinsin100(1010));
+
+
+
+
+// ***
+// 40.Shunday funksiya yasangki, ushbu funksiya stringni ichida nechta belgi borligini aytsin. Bunda length propertisidan foydalanmang va rekursiv funksiya ishlating.
+function stringLength(str, count = 0) {
+    if (str === "") return count;
+    return stringLength(str.slice(1), count + 1);
+}
+console.log(stringLength("hello world!"));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
